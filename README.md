@@ -1,3 +1,7 @@
+## About the project
+
+This is a next.js application that simulates a store checkout page where the user fills out the needed information and sends it to a server which returns sucess 80% of the time and fails the other 20% by generating a random number. The project is using react-hook-form, typescript and axios and also has E2E testing implemented using cypress.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
