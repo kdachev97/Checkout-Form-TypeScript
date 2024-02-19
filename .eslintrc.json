@@ -1,0 +1,52 @@
+{
+  "extends": [
+    "airbnb",
+    "next/core-web-vitals",
+    "plugin:import/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "newline-before-return": "warn",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-fragments": "off",
+    "import/prefer-default-export": "off",
+    "react/no-danger": "off",
+    "import/no-cycle": "warn",
+    "react/jsx-filename-extension": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.cy.ts",
+        "**/*.cy.tsx"
+      ],
+      "env": {
+        "cypress": true
+      }
+    }
+  ]
+}
